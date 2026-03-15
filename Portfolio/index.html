@@ -8,15 +8,68 @@
 </head>
 <body>
     <header>
-        <h1>Anderson Lúcio</h1>
+        <div class="logo">
+            <img id="computer-icon" src="../Portfolio/images/computer-icon.png" alt="ícone-computador">
+            <h1>Anderson Lúcio</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">Formação</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#" onclick="mostrarSecao('sobre-mim')">Sobre Mim</a></li>
+                <li><a href="#" onclick="mostrarSecao('formacao')">Formação</a></li>
+                <li><a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a></li>
+                <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+
+        <section class="secao hero">
+            <div class="hero-texto">
+                <p class="hero-intro">// Olá, mundo!</p>
+                <h2 class="hero-nome-intro">Me chamo</h2>
+                <h2 class="hero-nome">Anderson Lúcio</h2>
+                <p class="hero-descricao">Seja bem-vindo ao meu portfólio.</p>
+            </div>
+
+            <div class="hero-imagem">
+                <img src="../Portfolio/images/programacao-ilustracao.png" alt="ilustracao-programacao">
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="secao">
+
+            <div class="sobre-texto"> 
+                <h2 class="secao-titulo">Sobre Mim</h2>
+                <p>
+                Sou um desenvolvedor de software com paixão por criar aplicações web modernas e funcionais. Busco sempre aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções de alta qualidade.
+                Meu foco está em escrever código limpo, performático e acessível, seguindo as melhores práticas do mercado.
+                </p> 
+            </div>
+
+            <div class="sobre-cards">
+                <div class="card">
+                    <img src="icons/sql.png" alt="SQL Server">
+                <div class="card-texto">
+                <h3>SQL Server</h3>
+                <p>Modelagem de banco de dados, procedures, consultas complexas e otimização.</p>
+                </div>                
+            </div>
+        </section>
+
+        <section id="formacao" class="secao">
+            <h2>Formação</h2>
+        </section>
+
+        <section id="portfolio" class="secao">
+            <h2>Portfólio</h2>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
