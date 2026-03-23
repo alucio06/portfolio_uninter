@@ -20,6 +20,6 @@ document.getElementById("form-contato").addEventListener("submit", function(even
     retorno.style.color = "green";
 
     // limpa formulário
-    document.getElementById("formContato").reset();
+    document.getElementById("form-contato").reset();
 
 });
