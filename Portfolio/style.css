@@ -259,3 +259,8 @@ main {
 html {
     scroll-behavior: smooth;
 }
+
+#retorno-mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+}
