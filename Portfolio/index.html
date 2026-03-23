@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio</title>
+    <link rel="icon" type="image/png" href="../Portfolio/images/favicon.png">
+    <title>Anderson Lúcio - Portfólio</title>
 </head>
 <body>
     <header>
@@ -14,10 +15,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#" onclick="mostrarSecao('sobre-mim')">Sobre Mim</a></li>
-                <li><a href="#" onclick="mostrarSecao('formacao')">Formação</a></li>
-                <li><a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a></li>
-                <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+                <li><a href="#sobre-mim" onclick="mostrarSecao('sobre-mim')">Sobre Mim</a></li>
+                <li><a href="#formacao" onclick="mostrarSecao('formacao')">Formação</a></li>
+                <li><a href="#portfolio" onclick="mostrarSecao('portfolio')">Portfólio</a></li>
+                <li><a href="#contato" onclick="mostrarSecao('contato')">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -38,13 +39,12 @@
         </section>
 
         <section id="sobre-mim" class="secao">
-
-            <div class="sobre-texto"> 
+            <div class="sobre-texto">
                 <h2 class="secao-titulo">Sobre Mim</h2>
                 <p>
                 Sou um desenvolvedor de software com paixão por criar aplicações web modernas e funcionais. Busco sempre aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções de alta qualidade.
                 Meu foco está em escrever código limpo, performático e acessível, seguindo as melhores práticas do mercado.
-                </p> 
+                </p>
             </div>
 
             <div class="sobre-cards">
@@ -85,7 +85,7 @@
 
             <div class="formacao-cards">
                 <div class="formacao-card">
-                    <img src="../Portfolio/images/code-icon.png" class="card-imagem">
+                    <img src="../Portfolio/images/graduacao-icon.png" class="card-imagem">
                     <div class="card-conteudo">
                         <h3 class="card-titulo">Bacharelado em Engenharia da Computação - UFPA</h3>
                         <p class="card-descricao">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="formacao-card">
-                    <img src="../Portfolio/images/code-icon.png" class="card-imagem">
+                    <img src="../Portfolio/images/graduacao-icon.png" class="card-imagem">
                     <div class="card-conteudo">
                         <h3 class="card-titulo">Tecnólogo em Análise e Desenvolvimento de Sistemas - UNICESUMAR</h3>
                         <p class="card-descricao">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="formacao-card">
-                    <img src="../Portfolio/images/code-icon.png" class="card-imagem">
+                    <img src="../Portfolio/images/graduacao-icon.png" class="card-imagem">
                     <div class="card-conteudo">
                         <h3 class="card-titulo">Bacharelado em Engenharia de Software - UNINTER</h3>
                         <p class="card-descricao">
@@ -115,11 +115,74 @@
         </section>
 
         <section id="portfolio" class="secao">
-            <h2>Portfólio</h2>
+            <div class="portfolio-cards-esquerdo">
+                <h2 class="secao-titulo">Portfólio</h2>
+                 <div class="portfolio-card">
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">NerdStore Enterprise</h3>
+                        <p class="card-descricao">
+                            E-commerce desenvolvido durante o curso ASP.NET Core Enterprise Applications da plataforma Desenvolvedor.io<br/>
+                            <a href="https://github.com/alucio06/NerdStoreEnterprise" target="_blank">Veja mais</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">Projeto institucional para controle de alunos</h3>
+                        <p class="card-descricao">
+                            Projeto para controle de alunos de um instituto com atividades de esporte<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cards-direito"> 
+                <div class="portfolio-card">
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">Sistema de controle de Follow Up de Processos</h3>
+                        <p class="card-descricao">
+                            Sistema desenvolvido para a área de Suprimentos de uma empresa do ramo de mineração<br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">Automação de integrações para extração de dados SAP</h3>
+                        <p class="card-descricao">
+                            Desenvolvimento de rotinas de integração para extração de dados SAP via Winshuttle<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contato" class="secao">
-            <h2>Contato</h2>
+            <div class="contatos">
+                <h2 class="secao-titulo">Contato</h2>
+                <p class="contato-descricao">Tem um projeto em mente ou quer bater um papo? Entre em contato comigo através dos canais abaixo ou preencha o formulário<br/><br/>
+                    <span class="icone">📧</span><a href="mailto:alucio2106@gmail.com" target="_blank">alucio2106@gmail.com</a><br/>
+                    <span class="icone">💼</span><a href="https://www.linkedin.com/in/anderson-lucioo" target="_blank">Linkedin</a><br/>
+                    <span class="icone">🐙</span><a href="https://github.com/alucio06" target="_blank">GitHub</a><br/>
+                    <span class="icone">📍</span>Brasil
+                </p>
+            </div>
+            <div class="contato-formulario">
+                <form class="formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="rodape" class="secao">
+            © 2026 Anderson Lúcio. Todos os direitos reservados
         </section>
     </main>
 
